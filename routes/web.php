@@ -9,6 +9,7 @@ Route::get('/', function () {
 });
 Route::get('/dashboard', [AppController::class, 'index'])->name('dashboard');
 Route::get('/add-party', [PartyController::class, 'addParty'])->name('add-party');
+Route::post('/create-party', [PartyController::class, 'createParty'])->name('create-party');
 Route::get('/manage-parties', [PartyController::class, 'index'])->name('manage-parties');
 Route::get('/add-gst-bill', [GstBillController::class, 'addGstBill'])->name('add-gst-bill');
 Route::get('/manage-gst-bills', [GstBillController::class, 'index'])->name('manage-gst-bills');
